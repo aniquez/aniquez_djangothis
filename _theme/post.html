@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %}{{ post.title }}{% endblock %}
+{% block content %}
+
+<div class="row-fluid post">
+    <div class="span12">
+        <div class="card">
+            <div class="card-heading image" style="margin:0px 40px 0px 40px;">
+                <div class="card-heading-header">
+                    <h1>{{post.title}}</h1>
+                </div>
+            </div><!-- card-heading -->
+            <hr>
+            <div class="card-body" style="margin:0px 40px 0px 40px;">
+					{{ post.body|md:"codehilite" }}
+            </div><!--card-body-->
+
+            <div class="card-actions card-comments">
+                <!--button class="btn">+1</button>
+                <button class="btn">Share</button-->
+                <a href="#"> <i class="icon-facebook  muted pull-right"></i> </a>
+                <a href="#"> <i class="icon-twitter  muted pull-right"></i> </a>
+                <a href="#"> <i class="icon-google-plus  muted pull-right"></i> </a>
+
+                        {% include "comments.html" %}
+
+            </div><!-- card-actions -->
+
+        </div><!-- card -->
+
+        <div class="unit-inner unit-foot-inner">
+            <nav class="pagination">
+                <ul>
+                    {% if page.previous %}
+                    <li class="prev"><a class="internal" rel="prev"  href="{{ page.previous.url }}" title="View {{ page.previous.title }}">&laquo; {{ page.previous.title }}</a></li>
+                    {% endif %}
+                    {% if page.previous and page.next %}
+                    <li class="pipe"> | </li>
+                    {% endif %}
+                    {% if page.next %}
+                    <li class="next"><a class="internal" rel="next"  href="{{ page.next.url }}" title="View {{ page.next.title }}">{{ page.next.title }} &raquo;</a></li>
+                    {% endif %}
+                </ul>
+            </nav>
+            <!-- p class="gotop">
+                <a href="#page">Back to Top</a>
+            </p -->
+        </div><!-- unit-inner -->
+
+    </div><!-- span 12 -->
+</div><!-- row-fluid post -->
+
+
+
+{% endblock %}

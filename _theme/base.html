@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Aniquez| {% block title %}Melody Of Dissonance{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/theme/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="/theme/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+        <link href="/theme/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="/theme/css/switcher.css" rel="stylesheet" title="style" type="text/css" />
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700,400' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+
+        <link href="/theme/css/style.css" rel="stylesheet"/>
+
+
+    </head>
+    <body>
+        <!-- MAIN CONTAINER -->
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <!-- LEFT FIXED SIDE BAR -->
+                <div class="span3">
+                    <div class="sidebar-nav-fixed affix">
+
+                        <div class="card hovercard">
+
+                            <a href="/"><img src="/static/img/profile_pic.png" width="200px;" style="margin-top:30px;" alt="Aniket Thakkar" /></a>
+                            <div class="info">
+                                <div class="title">
+                                    <a href="/"><h2 style="color:#87B6AB;">Aniket Thakkar</h2></a>
+
+                                </div>
+                                <div class="desc">This is me, bringing the small boat of my life within speaking distance of yours, and saying - Hello!</div>
+                                <div class="category-display">
+                                <table style="margin:20px 0px 0px 50px;text-align:left;">
+                                    <tr>
+                                        <td><img class="icon-display" src="/static/img/pencil-icon.png" /></td>
+                                        <td style="padding-left:20px;"><h3 style="color:#f09609;">Writer</h3></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img class="icon-display" src="/static/img/laptop-icon.png" /></td>
+                                        <td style="padding-left:20px;"><h3 style="color:#2e8bcc;">Entrepreneur</h3></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img class="icon-display" src="/static/img/game-icon.png" /></td>
+                                        <td style="padding-left:20px;"><h3 style="color:#00aba9;">Day Dreamer</h3></td>
+                                    </tr>
+                                </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- LEFT FIXED SIDE BAR ENDS -->
+                <!-- RIGHT BLOG CONTENT CONTAINER -->
+                <div class="span9">
+                    <!-- BLOG POST CONTENT -->
+                    {% block content %}{% endblock %}
+
+                    <!--div class="row-fluid post">
+                        <div class="span12">
+                            <div class="card">
+                                <div class="card-heading image">
+                                    <div class="card-heading-header">
+                                        <a href="post.html"><h1>Blank Page</h1></a>
+                                        <h3> General Purpose Blank page</h3>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="card-media">
+                                    <a class="card-media-container" href="#">
+                                        <img data-src="holder.js/980x300/social" alt="media"/>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <p>Sometimes the best inspiration we can find comes from the minds of creative people, known for their ingenuity and innovation. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua.
+                                        Sometimes the best inspiration we can find comes from the minds of creative people, known for their ingenuity and innovation. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        Sometimes the best inspiration we can find comes from the minds of creative people, known for their ingenuity and innovation. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua.
+                                    </p>
+                                </div>
+
+                                <div class="card-actions card-comments">
+                                    <button class="btn">+1</button>
+                                    <button class="btn">Share</button>
+                                    <a href="#"> <i class="icon-facebook  muted pull-right"></i> </a>
+                                    <a href="#"> <i class="icon-twitter  muted pull-right"></i> </a>
+                                    <a href="#"> <i class="icon-google-plus  muted pull-right"></i> </a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div-->
+                    <!-- BLOG POST CONTENT ENDS -->
+                </div>
+                <!-- RIGHT BLOG CONTENT CONTAINER ENDS -->
+            </div>
+        </div>
+        <!-- MAIN CONTAINER END -->
+        <!--Footer Start-->
+      <div id="footer">
+            <div class="container ">
+                <!--p class="muted credit pull-right "> Simple footer looks good <a href="index.html">Home</a> | <a href="gallery.html">Photo Gallery</a> | <a href="topic.html">Topics/Categories</a> | <a href="blank.html"> Sample Page</a>.</p-->
+            </div>
+        </div>
+
+        <!--End Footer-->
+
+        <script src="/theme/js/jquery.js"></script>
+
+        <script src="/theme/js/bootstrap.min.js"></script>
+        <script src="/theme/js/switcher.js"></script>
+        <script src="/theme/js/holder.js"></script>
+   <script src="/theme/js/jquery.nicescroll.min.js"></script>
+        <script src="/theme/js/application.js"></script>
+
+    </body>
+</html>
