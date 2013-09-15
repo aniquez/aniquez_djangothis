@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "My first post"
-category: "Day Dreamer"
+category: "DD"
 ---
 {% include JB/setup %}
 

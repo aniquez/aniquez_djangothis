@@ -6,6 +6,15 @@
     <div class="span12">
         <div class="card">
             <div class="card-heading image" style="margin:0px 40px 0px 40px;">
+                    {%ifequal post.category 'DD'%}
+                    <a href="profile.html" > <img class="pull-right" src="/static/img/game-icon.png" alt="Day Dreamer"/></a>
+                    {%else%}
+                        {%ifequal post.category 'ET'%}
+                        <a href="profile.html" > <img class="pull-right" src="/static/img/laptop-icon.png" alt="Entreprenuer"/></a>
+                        {%else%}
+                            <a href="profile.html" > <img class="pull-right" src="/static/img/pencil-icon.png" alt="Writer"/></a>
+                        {%endifequal%}
+                    {%endifequal%}
                 <div class="card-heading-header">
                     <h1>{{post.title}}</h1>
                 </div>
