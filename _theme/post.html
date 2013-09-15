@@ -5,7 +5,7 @@
 <div class="row-fluid post">
     <div class="span12">
         <div class="card">
-            <div class="card-heading image" style="margin:0px 40px 0px 40px;">
+            <div class="card-heading image" style="margin:50px 40px 0px 100px;">
                     {%ifequal post.category 'DD'%}
                     <a href="profile.html" > <img class="pull-right" src="/static/img/game-icon.png" alt="Day Dreamer"/></a>
                     {%else%}
@@ -20,7 +20,7 @@
                 </div>
             </div><!-- card-heading -->
             <hr>
-            <div class="card-body" style="margin:0px 40px 0px 40px;">
+            <div class="card-body" style="margin:50px 140px 0px 100px;">
 					{{ post.body|md:"codehilite" }}
             </div><!--card-body-->
 

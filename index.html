@@ -7,32 +7,42 @@
 
         {% for post in posts %}
             <div class="card">
-                <div class="card-heading image" style="margin:0px 40px 0px 40px;">
+                <div class="card-heading image" style="margin:50px 40px 0px 100px;">
                     {%ifequal post.category 'DD'%}
-                    <a href="profile.html" > <img class="pull-right" src="/static/img/game-icon.png" alt="Day Dreamer"/></a>
+                    <a href="/day-dreamer/" > <img class="pull-right" src="/static/img/game-icon.png" alt="Day Dreamer"/></a>
                     {%else%}
                         {%ifequal post.category 'ET'%}
-                        <a href="profile.html" > <img class="pull-right" src="/static/img/laptop-icon.png" alt="Entreprenuer"/></a>
+                        <a href="/entrepreneur/" > <img class="pull-right" src="/static/img/laptop-icon.png" alt="Entreprenuer"/></a>
                         {%else%}
-                            <a href="profile.html" > <img class="pull-right" src="/static/img/pencil-icon.png" alt="Writer"/></a>
+                            <a href="/writer/" > <img class="pull-right" src="/static/img/pencil-icon.png" alt="Writer"/></a>
                         {%endifequal%}
                     {%endifequal%}
                     <div class="card-heading-header">
                         <a href="{{post.url}}"><h1>{{post.title}}</h1></a>
                         <h3>
                             <span> Published- <i class="icon-time muted"> </i> {{post.date}}</span>
-                            <span>  By Aniket Thakkar in  <i class="icon-bookmark muted"> </i>  <a href="topic.html"> {{post.category}} </a></span>
+                            <span>  By Aniket Thakkar in  <i class="icon-bookmark muted"> </i>
+                                {%ifequal post.category 'DD'%}
+                                <a href="/day-dreamer/" >Day Dreamer</a>
+                                {%else%}
+                                    {%ifequal post.category 'ET'%}
+                                        <a href="/entrepreneur/" >Entrepreneur</a>
+                                    {%else%}
+                                        <a href="/writer/" >Writer</a>
+                                    {%endifequal%}
+                                {%endifequal%}
+                            </span>
                         </h3>
                     </div><!-- card-heading-header -->
                 </div><!-- card-heading image -->
 
                 <hr>
 
-                <div class="card-body" style="margin:40px 0px 40px 40px;">
+                <div class="card-body" style="margin:50px 140px 0px 100px;">
                     {{ post.body|md:"codehilite" }}
                 </div><!-- card-body -->
 
-                <a href="{{post.url}}" class="btn" style="margin:0px 0px 0px 60px;">Drop a comment (I love 'em)</a>
+                <a href="{{post.url}}" class="btn" style="margin:50px 0px 0px 120px;">Drop a comment (I love 'em)</a>
         <br />
         <br />
         <br />
